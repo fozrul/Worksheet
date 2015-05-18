@@ -1,0 +1,159 @@
+body
+{
+    
+    width:60%;
+}
+
+.mainnav
+{
+ position:relative;left:450px;
+}
+
+.mainnav a
+{
+    text-decoration: none;
+    font-family: 'Open sans',sans-serif;
+    padding:20px;
+    color:black;
+    transition:color 0.7s;
+    
+}
+
+.mainnav a:hover
+{
+    color:blue;
+    
+}
+
+#pText
+{
+ font-family: 'Open Sans',sans-serif;
+ width:60px;
+    
+}
+#cText
+{
+ font-family: 'Open Sans',sans-serif;
+ width:60px;
+}
+
+#PythonImageHolder
+{
+    position:absolute;left:100px;top:200px;
+    
+}
+
+#PythonImageHolder a
+{
+    text-decoration: none;
+}
+
+#CImageHolder
+{
+    position:absolute;left:550px;top:200px;
+}
+
+#CImageHolder a
+{
+    text-decoration:none;
+}
+
+.pheading
+{
+	position:absolute;left:525px;top:40px;
+	
+}
+
+.greenColor
+{
+	color:green;
+	font-family:'courier';
+	
+}
+
+td 
+{
+	
+	padding:10px;
+	width:50%;
+}
+
+#printF
+{
+	font-size:12px;
+	font-family:'courier';
+	background-color:#d3d3d3;
+}
+
+.verticalmenu ul
+{
+	position:relative;top:60px;
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	width:200px;
+}
+
+.verticalmenu ul li a
+{
+	text-decoration:none;
+	color:black;
+	display:block;
+	margin:10px;
+	font-family:'Open Sans', sans-serif;
+	
+}
+.verticalmenu ul li a:hover
+{
+	color:blue;
+}
+
+.MainContent
+{
+	position:absolute;left:380px;top:100px;
+	width:50%;
+	font-family:'Open Sans', sans-serif;
+	
+}
+
+@media screen and (max-width:730px)
+{
+    .mainnav
+    {
+        
+        position:absolute;left:0px;
+}
+    
+}
+@media screen and (max-width:730px)
+{
+    #PythonImageHolder
+    {
+        position:absolute;left:0px;
+    }
+}
+@media screen and (max-width:730px) 
+{
+	.pheading
+	{
+		position:absolute;left:0px;
+	}
+			
+}
+@media screen and (max-width:730px)
+{
+	.verticalmenu
+	{
+		position:absolute;left:0px;top:50px;
+	}
+			
+}
+
+@media screen and (max-width:730px)
+{
+	.TutorialText
+	{
+		position:absolute;left:0px;top:200px;
+	}
+}
+    
