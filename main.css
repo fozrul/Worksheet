@@ -1,0 +1,249 @@
+body
+{
+    
+    width:60%;
+}
+
+.mainnav
+{
+ position:relative;left:450px;
+}
+
+.changeToCourier
+{
+	font-family:'Courier';
+	background-color:#DBDBDB;
+}
+
+#backtotop a /* Python if statement tutorial */
+{
+	text-decoration:none;
+}
+
+.ShowCodeForm + #backtotop /*this affects elements straight after it
+                            * i.e. div with id of backtotop is written
+                            * straight after class so addition sign 
+                            * affects elements right next to each other*/
+{
+	margin-top:20px;
+}
+
+.changeRed
+{
+	color:#ff6666;
+	
+}
+
+#WidthChange .changeRed
+{
+	width:40%;
+}
+
+code
+{
+	font-size:17px;
+}
+
+.mainnav a
+{
+    text-decoration: none;
+    font-family: 'Open sans',sans-serif;
+    padding:20px;
+    color:black;
+    transition:color 0.7s;
+    
+}
+
+.mainnav a:hover
+{
+    color:blue;
+    
+}
+
+#pText
+{
+ font-family: 'Open Sans',sans-serif;
+ width:60px;
+    
+}
+#cText
+{
+ font-family: 'Open Sans',sans-serif;
+ width:60px;
+}
+
+#PythonImageHolder
+{
+    position:absolute;left:100px;top:200px;
+    
+}
+
+#PythonImageHolder a
+{
+    text-decoration: none;
+}
+
+#CImageHolder
+{
+    position:absolute;left:550px;top:200px;
+}
+
+#CImageHolder a
+{
+    text-decoration:none;
+}
+
+.pheading
+{
+	position:absolute;left:525px;top:40px;
+	
+}
+
+.greenColor
+{
+	color:green;
+	font-family:'courier';
+	
+}
+
+td 
+{
+	
+	padding:10px;
+	width:50%;
+}
+
+#printF
+{
+	font-size:12px;
+	font-family:'courier';
+	background-color:#d3d3d3;
+}
+
+.verticalmenu ul
+{
+	position:relative;top:60px;
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	width:200px;
+}
+
+.verticalmenu ul li a
+{
+	text-decoration:none;
+	color:black;
+	display:block;
+	margin:10px;
+	font-family:'Open Sans', sans-serif;
+	
+}
+.verticalmenu ul li a:hover
+{
+	color:blue;
+}
+
+.MainContent
+{
+	position:absolute;left:380px;top:100px;
+	width:50%;
+	font-family:'Open Sans', sans-serif;
+	
+}
+
+.changeCodeToGrey > p /*changes parts of site which has code to grey to increase readability */
+{
+	background-color:D3D3D3;
+	border-radius:7px;
+	width:68%;
+	
+	
+}
+
+.TextPractice
+{
+	
+	
+}
+
+#StringsContent /* PythonTutorial.html page   */
+{
+	position:absolute;left:380px;top:420px;
+	width:50%;
+	font-family:'Open Sans', sans-serif;
+}
+
+
+#twitterL, #githubL
+{
+	margin:10px;
+	
+}
+
+form + form
+{
+	margin-top:15px;
+}
+
+fieldset legend
+{
+	background-color:#8FD8D8;
+	margin:20px;
+	font-size:22px;
+	border-radius:7px;
+	
+}
+
+@media screen and (max-width:730px)
+{
+    .mainnav
+    {
+        
+        position:absolute;left:0px;
+}
+    
+}
+@media screen and (max-width:730px)
+{
+    #PythonImageHolder
+    {
+        position:absolute;left:0px;
+    }
+}
+@media screen and (max-width:730px) 
+{
+	.pheading
+	{
+		position:absolute;left:0px;
+	}
+			
+}
+
+@media screen and (max-width:730px)
+{
+	.MainContent
+	{
+		position:absolute;left:0px;top:300px;
+	}
+				
+}
+
+
+@media screen and (max-width:730px)
+{
+	.verticalmenu
+	{
+		position:absolute;left:0px;top:50px;
+	}
+			
+}
+
+@media screen and (max-width:730px)
+	{
+		#StringsContent
+		{
+			position:absolute;left:0px;top:700px;
+		}
+		
+	}
+    
