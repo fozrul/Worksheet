@@ -1,0 +1,162 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Python If statements</title>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+	<nav class="mainnav">
+        <a href="homepage.html">Home</a>
+        <a href="#">Projects</a>
+        <a href="TutorialsHomePage.html">Tutorials</a>
+    </nav>
+	<h3 class="pheading">4. If Statements</h3>
+		
+		<div class="verticalmenu">
+			
+			<ul>
+				<li><a href="#">1.Installing Python</a></li>
+				<li><a href="PythonTutorialTwo.html">2.Printing strings</a></li>
+				<li><a href="PythonTutorialThree.html">3.Comments</a></li>
+				<li><a href="PythonIfStatements.html">4.If statements and conditionals</a></li>
+				<li><a href="#">5. For and while loops</a></li>
+			</ul>
+			
+		</div>
+	<div class="MainContent">
+		<p class="TutorialText">
+			The <span class="changeToCourier">if</span> statement is a conditional statement which is based around whether something is either true or false. An if statement can work alongside the <span class="changeToCourier">elif</span> and <span class="changeToCourier">else</span> statements to offer a more detailed program. <br><p></p>
+			Elif means if the initial 'if' statement is not true then run the code inside the elif statement.<p> <br>Else means run this if none of the if or elif statements are true.</p>
+			<form class="ShowCodeForm">
+				<fieldset>
+					<legend>
+						Example
+					</legend>
+					<pre><code>b = 5</code></pre>
+					<pre><code>if b==5:</code></pre>
+					<pre><code>&nbsp;&nbsp;&nbsp;print("b is equal to 5")</code></pre>
+					<pre><code>elif b==10:</code></pre>
+					<pre><code>&nbsp;&nbsp;&nbsp;print("b is equal to 10")</code></pre>
+					<pre><code>else:</code></pre>
+					<pre><code>&nbsp;&nbsp;&nbsp;print("None of the if or elif are true")</code></pre>
+				</fieldset>
+		</form>
+			
+		<form>
+			<fieldset>
+				<legend>
+					Outcome
+				</legend>
+				<pre><code>"b is equal to 5"</code></pre>
+			</fieldset>
+		</form>
+		
+		<form>
+			<fieldset>
+				<legend>
+					Explanation
+				</legend>
+				<p>
+				<ol>
+					<li>Ok so we have a variable called b which has a value of 5.</li><p></p> <li>With the if statement we are asking if b is equal to 5 which it is at that moment, so the condition is true so the code inside that condition is run.</li><p> <li>We also have an elif statement which will be run if b is equal to 10.</li><p>
+				<li>Finally, we have an else statement which will run if no other condition is true</li>
+					</p>
+					
+				</ol>
+				
+					
+			</fieldset>
+			
+		</form>
+		<h2>Nested If statements</h2>
+		<p>
+		From time to time within a program you may need to test more than expression to reach a conclusion. This is where nested if statements come in handy.<br><p></p>With nested if statements the outer if statement has to be true for the statement to print out the inner if statement.
+		<form class="ShowCodeForm">
+			<fieldset>
+				<legend>
+					
+					Example
+
+				</legend>
+				<pre><code>a = "deer"</code></pre>
+					<pre><code>b = "dear"</code></pre>
+					<pre><code>c = "debra"</code></pre>
+					<pre><code>if a=="deer":</code></pre>
+					<pre><code>&nbsp;&nbsp;&nbsp;print "Hello deer"</code></pre>
+					<pre><code>&nbsp;&nbsp;&nbsp;if b=="dear":</code></pre>
+					<pre><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "Hello dear"</code></pre>
+				<pre><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if c=="debra":</code></pre>
+				<pre><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "Hello debra"</code></pre>
+				
+			</fieldset>
+		</form>
+		
+		<form class="ShowCodeForm">
+			<fieldset>
+					<legend>
+						Outcome
+					</legend>
+					<pre><code>"Hello deer"</code></pre>
+					<pre><code>"Hello dear"</code></pre>
+					<pre><code>"Hello debra"</code></pre>
+					
+			</fieldset>
+			</form>
+			<p></p>
+		<form class="ShowCodeForm">
+			<fieldset>
+				<legend>
+					Explanation
+				</legend>
+				<ol>
+				<li>As you can see from the example all conditions are true so each code segment inside each if statement gets printed.</li><p></p> <li>However, if we were to change the initial value of <b>b</b> and change it to <b>deck</b> you will see that the output will differ and only one result will be shown because the condition is not true and will not print itself nor its inner statement which is dear and debra. See below for more detail.</li>
+				</ol>
+				
+			</fieldset>
+		</form>
+		<form class="ShowCodeForm">
+			<fieldset>
+				<legend>
+					Explanation two
+				</legend>
+				<pre><code>a = "deer"</code></pre>
+				<pre><code>b = "deck" <span class="changeRed">#b has been changed to deck</span></code></pre>
+					<pre><code>c = "debra"</code></pre>
+					<pre><code>if a=="deer":</code></pre>
+					<pre><code>&nbsp;&nbsp;&nbsp;print "Hello deer"</code></pre>
+					<pre><code>&nbsp;&nbsp;&nbsp;if b=="dear":</code></pre>
+					<pre><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "Hello dear"</code></pre>
+				<pre><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if c=="debra":</code></pre>
+				<pre><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "Hello debra"</code></pre>
+				
+			</fieldset>
+		</form>
+		
+		<form class="ShowCodeForm" id="WidthChange">
+			<fieldset>
+					<legend>
+						Outcome
+					</legend>
+					<pre><code>"Hello deer" <span class="changeRed">#deer only gets printed as value of b<br> #has changed so neither b nor c gets printed</span></code></pre>
+			</fieldset>
+			</form>
+		
+		<div id="backtotop">
+			<a href="#">Back to top</a>
+		</div>
+		
+	</div>
+</body>
+	<script>
+	$("#backtotop").click(function()
+						  {
+		
+		$("html","body").animate({scrollTop:10}, 1000);
+	}
+	
+	</script>
+</html>
