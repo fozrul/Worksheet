@@ -95,7 +95,9 @@ code
 
 .pheading
 {
-	position:absolute;left:525px;top:40px;
+	position:absolute;left:625px;top:35px;
+	font-family:"Myriad Pro","Gill Sans", sans-serif;
+	font-size:25px;
 	
 }
 
@@ -148,6 +150,7 @@ td
 	position:absolute;left:380px;top:100px;
 	width:50%;
 	font-family:'Open Sans', sans-serif;
+	background-color:white;
 	
 }
 
