@@ -6,6 +6,7 @@ To change this template use Tools | Templates.
 <head>
     <title>Python for loops</title>
 	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<script src="/bower_components/jquery.js"></script>
 </head>
 <body>
 	<nav class="mainnav">
@@ -18,6 +19,7 @@ To change this template use Tools | Templates.
 		<div class="verticalmenu">
 			
 			<ul>
+				<li>Menu</li>
 				<li><a href="#">1.Installing Python</a></li>
 				<li><a href="PythonTutorialTwo.html">2.Printing strings</a></li>
 				<li><a href="PythonTutorialThree.html">3.Comments</a></li>
@@ -26,6 +28,15 @@ To change this template use Tools | Templates.
 			</ul>
 			
 		</div>
+	
+		<div class="TasksheetsDownload">
+			<ul>
+				<li>Exercise files</li>
+				<li><a href="#">Exercise file one</a></li>
+				<li><a href="#">Exercise file two</a></li>
+				<li><a href="#">Exercise file three</a></li>
+			</ul>
+	</div>
 	<div class="MainContent">
 		<p class="TutorialText">
 			Within Python there is a function which allows you to iterate and complete operations <i>n</i> number of times this is called the <span class="changeToCourier">for</span> loop <br>There is also the while loop which is used to run continually when a specific condition is met but I will talk about that later.
@@ -93,4 +104,11 @@ To change this template use Tools | Templates.
 	</div>
 
 </body>
+	<script>
+	$("#clickToHide").click(function)()
+	{
+		$(".verticalmenu").hide();
+	});
+	
+	</script>
 </html>

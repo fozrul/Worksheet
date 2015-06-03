@@ -2,11 +2,66 @@ body
 {
     
     width:60%;
+	background-color:#e6e6e6;
 }
+
+#PythonText
+{
+	display:none;
+}
+
+/* class contains details regarding worksheets which help kids learn */
+
+.TasksheetsDownload
+{
+	position:absolute;right:20px;top:85px;
+	
+}
+
+.TasksheetsDownload a
+{
+	text-decoration:none;
+	color:black;
+}
+
+.TasksheetsDownload ul li
+{
+	
+	list-style-type:none;
+}
+
+.TasksheetsDownload li
+{
+	margin-top:15px;
+}
+
+#PythonDesc a
+{
+	text-decoration:none;
+	color:black;
+	font-family: 'Open Sans', sans-serif;
+	position:absolute;left:300px;top:200px;
+	
+}
+
+div#PythonDesc a:hover + div
+{
+	display:block;
+	position:absolute;top:350px;left:300px;width:200px;padding:10px;
+	color:blue;
+	background-color:black;
+}
+
 
 .mainnav
 {
- position:relative;left:450px;
+position:relative;left:470px;top:0px;
+font-size:25px;
+font-family:"Myriad Pro", sans-serif;
+width:400px;
+padding:3px;
+border-radius:7px;
+background-color:#8FD8D8;
 }
 
 .changeToCourier
@@ -42,6 +97,12 @@ body
 code
 {
 	font-size:17px;
+}
+
+.verticalmenu ul 
+{
+	color:white;
+	background-color:#FF9999;
 }
 
 .mainnav a
@@ -129,6 +190,18 @@ td
 	width:200px;
 }
 
+.verticalmenu li
+{
+	color:black;
+	font-family:'Open Sans', sans-serif;
+	
+}
+
+.TasksheetsDownload
+{
+	font-family:'Open Sans', sans-serif;
+}
+
 .verticalmenu ul li a
 {
 	text-decoration:none;
@@ -143,11 +216,18 @@ td
 	color:blue;
 }
 
+.verticalmenu
+{
+	background-color:"#e6e6e6";
+	
+}
+
 .MainContent
 {
 	position:absolute;left:380px;top:100px;
 	width:50%;
 	font-family:'Open Sans', sans-serif;
+	background-color:white;
 	
 }
 
@@ -160,11 +240,6 @@ td
 	
 }
 
-.TextPractice
-{
-	
-	
-}
 
 #StringsContent /* PythonTutorial.html page   */
 {
