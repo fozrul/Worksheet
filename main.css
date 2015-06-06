@@ -1,13 +1,59 @@
 body
 {
-    
-    width:60%;
+
 	background-color:#e6e6e6;
+	margin:0px;
+	padding:0px;
+}
+
+.mainnav
+{
+	width:100%;
+	float:left;
+	color:#444;
+	padding:0px;
+	height:35px;
+	background-color:#444;
+}
+
+.mainnav ul
+{
+	
+	list-style-type:none;
+	width:800px;
+	margin: 0 auto;
+}
+
+.mainnav li
+{
+	
+	float:left;
+	font-size:22px;
+	
+}
+
+.mainnav ul li a
+{
+	position:relative;left:120px;
+	width:100%;
+	display:block;
+	text-decoration:none;
+	color:white;
+	width:200px;
+	height:5px;
 }
 
 #PythonText
 {
 	display:none;
+}
+
+.TasksheetsDownload>ul li:first-of-type /* manipulates first li element
+                                         * inside unordered list
+                                         *  which is inside the TasksheetsDownload*/
+{
+	font-size:20px;
+	
 }
 
 /* class contains details regarding worksheets which help kids learn */
@@ -53,22 +99,7 @@ div#PythonDesc a:hover + div
 }
 
 
-.mainnav
-{
-position:relative;left:470px;top:0px;
-font-size:25px;
-font-family:"Myriad Pro", sans-serif;
-width:400px;
-padding:3px;
-border-radius:7px;
-background-color:#8FD8D8;
-}
 
-.changeToCourier
-{
-	font-family:'Courier';
-	background-color:#DBDBDB;
-}
 
 #backtotop a /* Python if statement tutorial */
 {
@@ -105,20 +136,47 @@ code
 	background-color:#FF9999;
 }
 
-.mainnav a
+
+
+/*vertical menu */
+
+#TutorialChoice
 {
-    text-decoration: none;
-    font-family: 'Open sans',sans-serif;
-    padding:20px;
-    color:black;
-    transition:color 0.7s;
-    
+	background:rgba(0,0,0,0.6);
+	width:15%;
+	height:80%;
+	position:absolute;left:0px;top:35px;
+}
+
+#TutorialChoice nav ul li
+{
+	list-style-type:none;
+	margin:15px;
+	color:white;
+	
+}
+
+#TutorialChoice nav ul li a
+{
+	text-decoration:none;
+	color:white;
+	
+}
+#TutorialChoice nav ul li:first-child
+{
+	position:relative;left:120px;
+	size:20px;
 }
 
 .mainnav a:hover
 {
     color:blue;
     
+}
+
+.TasksheetsDownload a:nth-child(1)
+{
+	font-size:30px;
 }
 
 #pText
@@ -299,6 +357,7 @@ fieldset legend
 	.MainContent
 	{
 		position:absolute;left:0px;top:300px;
+		width:100%;
 	}
 				
 }
