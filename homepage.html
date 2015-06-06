@@ -4,29 +4,63 @@
     <link rel="stylesheet" type="text/css" href="main.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <title>Homepage</title>
+	<style>
+	@media screen and (max-width:730px)
+		{
+			#TutorialChoice
+			{
+				width:400px;
+				height:140px;
+			}
+			
+		}
+	
+	</style>
     </head>
 
     <body>
-    <nav class="mainnav">
-        <a href="homepage.html">Home</a>
-        <a href="#">Projects</a>
-        <a href="TutorialsHomePage.html">Tutorials</a>
-    </nav>
+    <div class="mainnav">
+		<ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="TutorialsHomePage.html">Tutorials</a></li>
+    	</ul>
+	</div>
 		<div class="MainContent">
 		<p class="TutorialText">
-			
+			hELLO
 			
 			</p>
-			<div id="ImageWithText">
-				<h4 id="titleText">Where learning comes full circle!</h4>
-			</div>
+			
 			
 			
 		</div>
 			
+		<!--below will be side menu on left which will contain quick access to tutorials-->
+		<div id="TutorialChoice">
+			<nav>
+			<ul>
+				<li><a href="#" onclick="hide('TutorialChoice')">&#8592;</a></li>
+				<li><a href="#">Python - OO Programming, Loops, games!</a></li>
+				<li><a href="#">C# Programming</a></li>
+				
+				</ul>
+			
+			</nav>
+		</div>
 		
   
     </body>
+	
+	<script>
+	function hide(obj)
+		{
+			var el = document.getElementById(obj);
+			el.style.display='none';
+			
+		}
+	
+	</script>
     
 
 </html>
