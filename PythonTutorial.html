@@ -12,35 +12,54 @@
     .MainContent
     {
         
-        position:absolute;left:0px;top:280px;
+        position:absolute;left:0px;top:320px;
         width:80%;
     }
     
 }
+		@media screen and (max-width:730px)
+		{
+			#TutorialChoice
+			{
+				width:230px;
+				height:230px;
+			}
 
-	
+				.pheading
+			{
+				color:white;
+				position:absolute;left:50px;top:260px;
+			}
+			
+		}}
+		}
 	</style>
     </head>
-    <body bgcolor="">
+    <body>
     
-	<nav class="mainnav">
-        <a href="homepage.html">Home</a>
-        <a href="#">Projects</a>
-        <a href="TutorialsHomePage.html">Tutorials</a>
-    </nav>
+	<div class="mainnav">
+		<ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="TutorialsHomePage.html">Tutorials</a></li>
+    	</ul>
+	</div>	
+		
 		
 		<h3 class="pheading">1. Installing Python</h3>
 		
-		<div class="verticalmenu">
-			
+		<div id="TutorialChoice">
+			<nav>
 			<ul>
-				<li><a href="PythonTutorial.html">1.Installing Python</a></li>
-				<li><a href="PythonTutorialTwo.html">2.Printing strings</a></li>
-				<li><a href="PythonTutorialThree.html">3.Comments</a></li>
-				<li><a href="#">4.If statements /and conditionals</a></li>
+				<li><a href="#" onclick="hide('TutorialChoice')">&#8592;</a></li>
+				<li><a href="PythonTutorial.html">1. Installing Python</a></li>
+				<li><a href="PythonTutorialTwo">2. Printing Strings</a></li>
+				<li><a href="#">3. Comments</a></li>
+				<li><a href="#">4. If statements and conditionals</a></li>
 				<li><a href="#">5. For and while loops</a></li>
-			</ul>
+				</ul>
 			
+			</nav>
 		</div>
 		
 		<div class="MainContent">
@@ -49,5 +68,11 @@
 		</div>
 		
     </body>
+	<script>
+	function hide() {
+		$(this).parent().fadeOut(); //hides element on click of arrow
+	}
+	
+	</script>
 
 </html>

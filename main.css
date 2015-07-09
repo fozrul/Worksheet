@@ -41,6 +41,8 @@ body
 	color:white;
 	width:200px;
 	height:5px;
+	transition:color 1s;
+	
 }
 
 
@@ -139,7 +141,6 @@ code
 
 
 
-/*vertical menu */
 
 #TutorialChoice
 {
@@ -171,7 +172,7 @@ code
 
 .mainnav a:hover
 {
-    color:blue;
+    color:#e4e4e4;
     
 }
 
@@ -272,7 +273,7 @@ td
 }
 .verticalmenu ul li a:hover
 {
-	color:blue;
+	color:red;
 }
 
 .verticalmenu
@@ -362,6 +363,9 @@ fieldset legend
 	}
 				
 }
+
+
+		
 
 
 @media screen and (max-width:730px)
